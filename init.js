@@ -8,6 +8,6 @@ const url = process.argv[2];
   const client = await page.target().createCDPSession();
   await page.goto(url, {waitUntil: 'networkidle0', timeout: 60*1000})
   await new Promise(r => setTimeout(r, 10*1000))
-  await page.screenshot({ path: './proof.jpg', type: 'jpeg' });
+  await page.screenshot({ path: './proof.jpg', type: 'jpeg', fullPage: true });
   await browser.close();
 })();
