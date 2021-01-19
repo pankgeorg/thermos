@@ -1,5 +1,8 @@
 name: Warmer
 on:
+  push:
+    branches: 
+      - master
   schedule:
     - cron: '*/30 * * * *'
 jobs:
