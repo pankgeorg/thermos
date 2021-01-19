@@ -1,0 +1,21 @@
+{
+  "name": "thermos",
+  "version": "0.0.1",
+  "description": "keep your julia server warm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankgeorg/thermos.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/pankgeorg/thermos/issues"
+  },
+  "homepage": "https://github.com/pankgeorg/thermos#readme",
+  "dependencies": {
+    "puppeteer": "^5.5.0"
+  }
+}
