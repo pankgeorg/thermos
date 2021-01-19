@@ -11,4 +11,8 @@ jobs:
     steps:
       - name: branch checkout
         uses: actions/checkout@v2
-      - run: npm install && node ./init.js https://google.com && ls -alh
+      - run: npm install && node ./init.js https://observablehq.com/d/8719b09f9026e9f6 && ls -alh
+      - uses: actions/upload-artifact@v2
+        with:
+          name: screenshot
+          path: proof.jpg
