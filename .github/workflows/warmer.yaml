@@ -1,4 +1,4 @@
-name: Pull request labeler
+name: Warmer
 on:
   schedule:
     - cron: '*/30 * * * *'
@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: branch checkout
         uses: actions/checkout@v2
-      - run: node ./init.js https://google.com && ls -alh
+      - run: npm install && node ./init.js https://google.com && ls -alh
